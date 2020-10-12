@@ -3,9 +3,6 @@ import axiosInstance from "../../utils/axios.helpers";
 import {
 	PosterBaseUrl154,
 	PosterBaseUrl185,
-	BackDropBaseUrl300,
-	PosterBaseUrl500,
-	PosterBaseUrl342
 	// PosterBaseUrlOriginal,
 } from "../../utils/tmdb-requests.helpers";
 
@@ -13,7 +10,7 @@ import movieTrailer from 'movie-trailer';
 import ReactPlayer from "react-player/youtube";
 
 // // MUI styles
-import { makeStyles } from "@material-ui/core/styles";
+// import { makeStyles } from "@material-ui/core/styles";
 // // MUI Card
 // import Card from "@material-ui/core/Card";
 // import CardActionArea from "@material-ui/core/CardActionArea";
@@ -33,23 +30,23 @@ import Modal from "@material-ui/core/Modal";
 import "./row.styles.css";
 
 // Material-UI styles
-const useStyles = makeStyles((theme) => ({
-	paper: {
-		position: "relative",
-		width: 640,
-		height: 360,
-		// backgroundColor: theme.palette.background.paper,
-		border: "none",
-		// border: "2px solid #000",
-		outline: "none",
-		// boxShadow: theme.shadows[5],
-		// padding: theme.spacing(2, 4, 2),
-	},
-}));
+// const useStyles = makeStyles((theme) => ({
+// 	paper: {
+// 		position: "relative",
+// 		width: 640,
+// 		height: 360,
+// 		// backgroundColor: theme.palette.background.paper,
+// 		border: "none",
+// 		// border: "2px solid #000",
+// 		outline: "none",
+// 		// boxShadow: theme.shadows[5],
+// 		// padding: theme.spacing(2, 4, 2),
+// 	},
+// }));
 
 
 const Row = ({ title, fetchUrl, isLargeRow }) => {
-	const classes = useStyles();
+	// const classes = useStyles();
 
 	const [loading, setLoading] = useState(true);
 	const [movies, setMovies] = useState([]);
